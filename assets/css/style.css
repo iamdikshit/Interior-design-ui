@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-image: url("../img/interior.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+.header-seaction {
+  display: flex;
+  padding: 0 4.8rem;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+}
+.main-list {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 4rem;
+}
+.list-link {
+  list-style: none;
+}
+.logo,
+.main-nav-links:link,
+.main-nav-links:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.list-link:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+.call,
+.number {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.phone-icon {
+  width: 3rem;
+  fill: #fff;
+  transform: rotate(90deg);
+}
+
+/* hero section */
+.hero-section {
+  padding: 4.8rem 0 0 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.hero-title {
+  margin-top: 10rem;
+}
+.primary-heading {
+  font-size: 5.6rem;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
+.primary-btn {
+  font-size: 1.6rem;
+  padding: 1rem 3.2rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+.card-icon {
+  transform: scaleX(-1);
+}
+
+.icons {
+  width: 9rem;
+  background-color: #fff;
+  padding: 0.8rem 3.2rem;
+  border-radius: 3rem;
+}
+.card-description {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.hero-right-section {
+  position: relative;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  position: absolute;
+}
+.card-one {
+  width: 30rem;
+  top: 0;
+  left: 0;
+  transform: translate(20rem, -15rem);
+}
+
+.card-two {
+  width: 25rem;
+  top: 0;
+  left: 0;
+  transform: translate(0, 15rem);
+}
+.line-icon {
+  position: absolute;
+  width: 5rem;
+  transform: rotate(90deg);
+  top: 14.2rem;
+  left: 20rem;
+}
+
+.line-icon-2 {
+  position: absolute;
+  width: 5rem;
+  left: 25rem;
+  top: 5rem;
+}
+
+/* Media Queries */
+
+/* below 1344px (smaller desktop) */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .card-two {
+    transform: translate(0, 12rem);
+  }
+}
+
+/*  below 1200px (landscape tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .main-list {
+    gap: 4rem;
+  }
+
+  .card-two {
+    transform: translate(0, 10rem);
+  }
+}
+
+/*  below 944px ( tablets) */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-section {
+    padding: 0;
+  }
+
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+
+  .card-one {
+    width: 25rem;
+    transform: translate(59rem, 3rem);
+  }
+
+  .card-two {
+    transform: translate(0, 4rem);
+  }
+
+  .line-icon {
+    transform: rotate(-90deg);
+    top: -2.8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .hero-right-section {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+  }
+  .card {
+    position: relative;
+  }
+
+  .card-one {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .card-two {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .line-icon {
+    left: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .main-list {
+    display: none;
+  }
+
+  .hero-title {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 39em) {
+  .main-list {
+    display: none;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    margin-top: 5rem;
+  }
+
+  .hero-right-section {
+    padding-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .line-icon {
+    top: 2.2rem;
+    transform: rotate(180deg);
+    left: -5rem;
+  }
+}
